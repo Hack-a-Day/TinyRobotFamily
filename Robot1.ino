@@ -17,15 +17,15 @@ It is in the public domain, so do what you will with it.
 
 // Here are some parameters that you need to adjust for your setup
 // Base speeds are the motor pwm values. Adjust them for desired motor speeds.
-#define baseLeftSpeed 17
-#define baseRightSpeed 17
+#define baseLeftSpeed 25
+#define baseRightSpeed 25
 
 // This determines sensitivity in detecting black and white
 // measurment is considered white if it is > whiteValue*n/4
 // where n is the value below. n should satisfy 0<n<4
 // A reasonable value is 3. Fractions are acceptable.
-#define leftSensitivity 3
-#define rightSensitivity 3
+#define leftSensitivity 2
+#define rightSensitivity 2
 
 // the pin definitions
 #define lmotorpin 1 // PB1 pin 6
@@ -36,9 +36,9 @@ It is in the public domain, so do what you will with it.
 
 // some behavioral numbers
 // these are milisecond values
-#define steplength 300
-#define smallturn 200
-#define bigturn 500
+#define steplength 325
+#define smallturn 20
+#define bigturn 50
 #define memtime 1000
 
 // variables
@@ -95,7 +95,7 @@ void followEdge(){
   while(true){
     // only read sensors about once every 20ms
     // it can be done faster, but this makes motion smoother
-    delay(18);
+    delay(2);
     // read the value 4 times and average
     ledon;
     delay(1);
