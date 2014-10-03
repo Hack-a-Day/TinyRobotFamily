@@ -24,8 +24,8 @@ It is in the public domain, so do what you will with it.
 // measurment is considered white if it is > whiteValue*n/4
 // where n is the value below. n should satisfy 0<n<4
 // A reasonable value is 3. Fractions are acceptable.
-#define leftSensitivity 2
-#define rightSensitivity 2
+#define leftSensitivity 3
+#define rightSensitivity 3
 
 // the pin definitions
 #define lmotorpin 1 // PB1 pin 6
@@ -36,7 +36,7 @@ It is in the public domain, so do what you will with it.
 
 // some behavioral numbers
 // these are milisecond values
-#define steplength 325
+#define steplength 20
 #define smallturn 20
 #define bigturn 50
 #define memtime 1000
